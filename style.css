@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    text-align: center;
+    background-color: #FFD400;
+}
+
+/* -----------Nav-------- */
+nav{
+    background-color: #F1F0F1;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li, a{
+    color: black;
+    font-weight: 300px;
+}
+nav ul li:nth-child(2){
+    position: relative;
+}
+nav ul li i{
+    font-size: 20px;
+}
+nav ul li:nth-child(2) input {
+    height: 30px;
+    width: 400px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 12px;
+    outline: none;  
+}
+nav ul li:nth-child(2) i{
+    position: absolute;
+    font-size: 12px;
+    right: 12px;
+    line-height: 30px;
+    cursor: pointer;
+}
+nav ul li:nth-child(2) i:hover{
+    color:rgb(236, 15, 15);
+}
+
+/* ------------Section menu bar ------------*/
+
+.menu-bar{
+    background-color: #F1F0F1;
+}
+
+.menu-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+.menu-bar ul li{
+    border-left: 3px solid #E03030;
+    padding-left: 10px;
+}
+
+.menu-bar ul li a{
+    color: #E03030;
+    font-size: 18px;
+    font-weight: 300px;
+}
+.menu-bar ul li i{
+    padding-right: 6px;
+}
+
+/* ------------- Menu btn ---------- */
+.menu-btn{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.list-item{
+    background-color: #505050;
+    color: white;
+    padding: 8px 20px;
+}
+.menu-btn ul {
+    display: flex;
+
+}
+.list-btn{
+    margin-left: 100px;
+    
+}
+.list-btn li{
+    margin-left: 50px;
+    
+}
+.list-btn li button{
+    padding: 8px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background-color: #F1F0F1;
+}
+.list-btn li button:hover{
+    background-color: red;
+}
