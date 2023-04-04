@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #F1F0F1; */
 }
 ul {
     list-style: none;
@@ -90,33 +91,63 @@ nav ul li:nth-child(2) i:hover{
 /* ------------- Menu btn ---------- */
 .menu-btn{
     margin-top: 10px;
-    display: flex;
+    display: block;
     align-items: center;
+    float: left;
 }
-.list-item{
+.item{
     background-color: #505050;
     color: white;
-    padding: 8px 20px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    width: 220px;
 }
-.menu-btn ul {
-    display: flex;
+.list-items{
+    margin-top: 12px;
 
 }
-.list-btn{
-    margin-left: 100px;
-    
+.list-items > ul > li{
+    padding: 20px 0;
 }
-.list-btn li{
-    margin-left: 50px;
-    
-}
-.list-btn li button{
-    padding: 8px 40px;
-    border-radius: 5px;
+.list-items > ul > li:hover{
+    color: white;
+    background-color: #ee0a0a;
     cursor: pointer;
-    outline: none;
-    background-color: #F1F0F1;
 }
-.list-btn li button:hover{
-    background-color: red;
+
+/* --------------sub list----------- */
+
+.list-items ul li{
+    position: relative;
 }
+
+.sublist{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: none;
+    float: left;
+    left: 100%;
+    top: 0px;
+    background-color: white;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.sublist a{
+    padding-top: 10px;
+}
+
+.sublist ul li{
+    color: black;
+    margin-top: 12px;
+}
+.sublist ul li:hover{
+    color: red;
+}
+.list-items ul li:hover .sublist{
+    display: block;
+    
+}
+
+
+
