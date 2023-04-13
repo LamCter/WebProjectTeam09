@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán đơn hàng</title>
+    <style>
+        .letrai{
+            width: 7%;
+            height: 1000px;
+            float: left;
+        }
+        
+        .thongtingiaohang{
+            width: 40%;
+            height: 1000px;
+            float: left;
+            
+        }
+        .middle{
+            width: 6%;
+            height: 1000px;
+            float: left;
+           
+        }
+        .thongtindonhang{
+            width: 40%;
+            height: 1000px;
+            float: left;
+            background-color: whitesmoke;
+        }
+        .lephai{
+            width: 7%;
+            height: 1000px;
+            float: right;
+            background-color: whitesmoke
+        }
+        .button{
+            float: right;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr{
+            height: 80px;
+        }
+        table{
+            border-top: solide whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="letrai"></div>
+    <div class="thongtingiaohang">
+        <h1>GEARVN.com</h1>
+        <h3>Thông tin giao hàng</h3>
+        <div><span>Bạn đã có tài khoản?</span>
+        <span><a href="" style="text-decoration: none; color: blue;">Đăng Nhập</a></span></div><br>
+        <form>
+            <div><input type="text" placeholder="Họ và tên" style="width: 100%; height: 40px; border-radius: 5px;"></div><br>
+            <div><input type="text" placeholder="Email" style="width: 65%; height: 40px; border-radius: 5px;">
+            <input type="text" placeholder="Số điện thoại" style="width: fit-content; height: 40px; float: right; border-radius: 5px;"></div><br>
+            <div><input type="text" placeholder="Địa chỉ" style="width: 100%; height: 40px; border-radius: 5px;"></div>
+        </form>
+        
+        <div>
+            <h3>Phương thức vận chuyển</h3>
+            <p>Giao hàng tận nơi</p>
+            <h3>Phương thức thanh toán</h3>
+            <p>Thanh toán khi nhận hàng(COD)</p>
+        </div>
+        <div>
+            <button class="button" style="background-color: springgreen; height: 50px; border-color: springgreen; border-radius: 8px;"><b>Hoàn tất đơn hàng</b></button>
+        </div>
+
+    </div>
+    <div class="middle"></div>
+    <div class="thongtindonhang">
+        <h2>Thông tin đơn hàng</h2>
+        <table style="width: 100%;">
+            <tr>
+                <th rowspan="3" style="border: solid whitesmoke; width: 7%;"></th>
+                <td style="border-top: solid whitesmoke;">Tên sản phẩm</td>
+                <td style="width: 30%; border-left: solid whitesmoke; border-right: solid whitesmoke; border-top: solid whitesmoke;">giá sản phẩm</td>
+            </tr>
+            <tr>
+                <td>
+                    <P>tạm tính</P>
+                    <p>phí vận chuyển</p>
+                </td>
+                <td style="border-left: solid whitesmoke; border-right: solid whitesmoke;">
+                    <p>tổng giá sản phẩm</p>
+                    <p>miễn phí</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Tổng cộng</td>
+                <td style="border-left: solid whitesmoke; border-right: solid whitesmoke;">Giá</td>
+            </tr>
+        </table>
+    </div>
+    <div class="lephai"></div>
+</body>
+</html>
