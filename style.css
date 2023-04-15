@@ -443,3 +443,24 @@ a.buy-btn:hover{
     margin: 0px auto;
     padding: 10px 20px;
 }
+
+/*-- ----------------------Signup----------------- --*/
+
+
+.content_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.req_pass{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
